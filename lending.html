@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css" type="text/css" >
+</head>
+<body>
+    <div id="head">
+        <p2 onclick="navigate_library(4)">LENDING</p2>
+        <p></p><p></p><p></p><p></p>
+        <p3 onclick="navigate_library(5)">Return</p3>
+        <p></p><p></p><p></p><p>
+        <p4 onclick="navigate_library(6)">Book Management</4>
+    </div>
+    <div id="content">
+        <p5>
+        <label for="usnInput">Choose a USN:
+        <input list="usns" id="usnInput" name="usnInput" placeholder="Type to search">
+        <datalist id="usns">
+        <option value="4JN21AI001">
+        <option value="4JN21AI002">
+        <option value="4JN21AI003">
+        <option value="4JN21AI004">
+        <!-- Add more options as needed -->
+        </label>
+        </datalist>
+        <label for="isbnInput">Choose a BookId:
+            <input list="isbns" id="isbnInput" name="isbnInput" placeholder="Type to search">
+            <datalist id="isbns">
+            <option value="bk001">
+            <option value="bk002">
+            <option value="bk003">
+            <option value="bk004">
+            <!-- Add more options as needed -->
+        </label>
+        </datalist>
+        </p5>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
